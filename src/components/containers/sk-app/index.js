@@ -39,7 +39,7 @@ export default class SkApp extends LitElement {
   }
 
   startTour() {
-    window.location.replace('https://github.com/PolymerX/polymer-skeleton');
+    window.location.replace('https://github.com/sipi/lit-element-skeleton');
   }
 
   reload() {
