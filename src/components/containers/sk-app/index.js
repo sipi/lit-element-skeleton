@@ -8,21 +8,9 @@ import '../../dumbs/sk-button';
 export default class SkApp extends LitElement {
   static get properties() {
     return {
-      name: {
-        type: String
-      },
-      appVersion: {
-        type: String,
-        value: process.env.appVersion
-      },
-      ENV: {
-        type: String,
-        value: process.env.NODE_ENV
-      },
-      updateReady: {
-        type: Boolean,
-        value: false
-      }
+      appVersion: String,
+      ENV: String,
+      updateReady: Boolean
     };
   }
 
@@ -32,6 +20,9 @@ export default class SkApp extends LitElement {
 
   constructor() {
     super();
+    this.appVersion = process.env.appVersion;
+    this.ENV = process.env.NODE_ENV;
+    this.updateReady = false;
 
     document.addEventListener('updateReady', () => {
       this.updateReady = true;
