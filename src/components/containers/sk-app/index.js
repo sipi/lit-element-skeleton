@@ -8,6 +8,7 @@ import '../../dumbs/sk-button';
 export default class SkApp extends LitElement {
   static get properties() {
     return {
+      name: String,
       appVersion: String,
       ENV: String,
       updateReady: Boolean
