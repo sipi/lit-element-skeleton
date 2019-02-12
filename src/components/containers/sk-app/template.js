@@ -13,7 +13,7 @@ export default self => html`
 
 ${
   self.updateReady ?
-    html`<sk-button @click="reload" class="UpdateReadyAlert">Update ready, reload!</sk-button>` : ''
+    html`<sk-button @click="${self.reload}" class="UpdateReadyAlert">Update ready, reload!</sk-button>` : ''
 }
 
 <aside class="Meta">
