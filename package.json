@@ -67,6 +67,8 @@
     "stylelint": "9.10.1",
     "stylelint-config-standard": "18.2.0",
     "text-loader": "0.0.1",
+    "ts-loader": "5.3.3",
+    "typescript": "3.3.3",
     "wct-browser-legacy": "1.0.2",
     "web-component-tester": "6.9.2",
     "webpack": "4.29.3",

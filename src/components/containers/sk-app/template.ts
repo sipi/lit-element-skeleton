@@ -8,12 +8,12 @@ export default self => html`
     Take the future and start building your progressive web apps with Polymer Skeleton, the most advanced Polymer starter kit.
   </p>
 
-  <sk-button on-click="${self.startTour}">Take a tour</sk-button>
+  <sk-button @click="${self.startTour}">Take a tour</sk-button>
 </section>
 
 ${
   self.updateReady ?
-    html`<sk-button on-click="reload" class="UpdateReadyAlert">Update ready, reload!</sk-button>` : ''
+    html`<sk-button @click="reload" class="UpdateReadyAlert">Update ready, reload!</sk-button>` : ''
 }
 
 <aside class="Meta">

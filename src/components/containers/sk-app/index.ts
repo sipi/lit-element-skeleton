@@ -1,30 +1,17 @@
 
-import {LitElement, html} from 'lit-element';
+import {LitElement, html, customElement} from 'lit-element';
 
-import css from './style.pcss';
+const css = require('./style.pcss');
 import template from './template';
 import '../../dumbs/sk-button';
 
+@customElement('sk-app')
 export default class SkApp extends LitElement {
-  static get properties() {
-    return {
-      name: {
-        type: String
-      },
-      appVersion: {
-        type: String,
-        value: process.env.appVersion
-      },
-      ENV: {
-        type: String,
-        value: process.env.NODE_ENV
-      },
-      updateReady: {
-        type: Boolean,
-        value: false
-      }
-    };
-  }
+
+  name: String;
+  appVersion: String;
+  ENV: String;
+  updateReady: Boolean;
 
   render() {
     return html`<style>${css}</style> ${template(this)}`;
@@ -32,6 +19,10 @@ export default class SkApp extends LitElement {
 
   constructor() {
     super();
+    this.name = "";
+    this.appVersion = <String> process.env.appVersion;
+    this.ENV = <String> process.env.NODE_ENV;
+    this.updateReady = false;
 
     document.addEventListener('updateReady', () => {
       this.updateReady = true;
@@ -46,5 +37,3 @@ export default class SkApp extends LitElement {
     window.location.reload();
   }
 }
-
-window.customElements.define('sk-app', SkApp);

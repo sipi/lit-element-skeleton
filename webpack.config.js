@@ -112,17 +112,25 @@ const plugins = sharedPlugins.concat(IS_DEV_SERVER ? devPlugins : buildPlugins);
 
 module.exports = {
   mode: ENV,
-  entry: './src/index.js',
+  entry: './src/index.ts',
   output: {
     path: OUTPUT_PATH,
     filename: 'bundle.js'
   },
   devtool: 'cheap-source-map',
+  resolve: {
+    extensions: ['.ts', '.js', '.pcss']
+  },
   module: {
     rules: [
       {
         test: /\.pcss$/,
         use: ['text-loader', 'postcss-loader']
+      },
+      {
+        test: /\.ts?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.js$/,

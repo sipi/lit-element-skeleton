@@ -1,13 +1,12 @@
 
-import {LitElement, html} from 'lit-element';
+import {LitElement, html, customElement} from 'lit-element';
 
-import css from './style.pcss';
+const css = require('./style.pcss');
 import template from './template';
 
+@customElement('sk-button')
 export default class SkButton extends LitElement {
   render() {
     return html`<style>${css}</style> ${template(this)}`;
   }
 }
-
-window.customElements.define('sk-button', SkButton);
