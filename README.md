@@ -3,7 +3,7 @@
 [![GitHub release](https://img.shields.io/github/release/sipi/lit-element-skeleton.svg?style=flat-square)](https://github.com/sipi/lit-element-skeleton)
 [![Build Status](https://travis-ci.org/sipi/lit-element-skeleton.svg?style=flat-square&branch=master)](https://travis-ci.org/sipi/lit-element-skeleton)
 [![GitHub issues](https://img.shields.io/github/issues/sipi/lit-element-skeleton.svg?style=flat-square)](https://github.com/sipi/lit-element-skeleton/issues)
-[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo) [![Greenkeeper badge](https://badges.greenkeeper.io/sipi/lit-element-skeleton.svg)](https://greenkeeper.io/)
 
 > A mininum boilerplate to deliver a LitElement 2.x with Webpack, PostCSS and Service Workers ready.
 
