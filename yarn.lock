@@ -6812,17 +6812,17 @@ line-column-path@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/line-column-path/-/line-column-path-1.0.0.tgz#383b83fca8488faa7a59940ebf28b82058c16c55"
 
-lit-element@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.0.1.tgz#9ec5871d3b64487f432c7c071df80ef031d7091b"
-  integrity sha512-2bu3B2ZYUZgntvOgu3i5mRK8geo45CLUwxwJEYK54hyednoJasjiTZPB13NBg1D+hNM2JfmWTWJnh1QEUQv7zw==
+lit-element@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.3.0.tgz#a78d98e3c17afdfcfa3ab8335e839ac69f5c204e"
+  integrity sha512-t3ask/FPcNTIixniBjTrkCeNPWOxyEQxWkSNuSqBYARoyg7/EjNT8uNrbgUwKt0GALwN417GI9eHQY1BgXpLUA==
   dependencies:
-    lit-html "^1.0.0"
+    lit-html "^1.1.1"
 
-lit-html@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.0.0.tgz#3dc3781a8ca68a9b5c2ff2a61e263662b9b2267b"
-  integrity sha512-oeWlpLmBW3gFl7979Wol2LKITpmKTUFNn7PnFbh6YNynF61W74l6x5WhwItAwPRSATpexaX1egNnRzlN4GOtfQ==
+lit-html@^1.1.1:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.2.0.tgz#4d1a458d70354bd034b4a24fb0d229a4cbc7e0ee"
+  integrity sha512-PC/oZsNhTiH4/JHIWMtAFePkKYbflmTi1ZHA/FRDKuw/HARINK/MNHWuHuQ8pXKXOIgBzdHZEDApm/7SGZQXgA==
 
 load-json-file@^1.0.0:
   version "1.1.0"
